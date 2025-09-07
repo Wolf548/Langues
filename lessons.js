@@ -1,18 +1,14 @@
-// Rotation 2 langues / jour (Europe/Paris)
-// Lundi Arabe + Allemand, Mardi Italien + Russe, Mercredi Wenzhounais + Espagnol,
-// Jeudi Anglais + Français, Vendredi Chinois + Arabe, Samedi Allemand + Espagnol, Dimanche Italien + Russe
-
+// Rotation 2 langues / jour
 export const ROTATION = {
-  1: ["Arabe", "Allemand"],      // Monday
-  2: ["Italien", "Russe"],       // Tuesday
-  3: ["Wenzhounais", "Espagnol"],// Wednesday
-  4: ["Anglais", "Français"],    // Thursday
-  5: ["Chinois", "Arabe"],       // Friday
-  6: ["Allemand", "Espagnol"],   // Saturday
-  0: ["Italien", "Russe"]        // Sunday (dayjs isoWeekday: we’ll map manually)
+  1: ["Arabe", "Allemand"],       // Lundi
+  2: ["Italien", "Russe"],        // Mardi
+  3: ["Wenzhounais", "Espagnol"], // Mercredi
+  4: ["Anglais", "Français"],     // Jeudi
+  5: ["Chinois", "Arabe"],        // Vendredi
+  6: ["Allemand", "Espagnol"],    // Samedi
+  0: ["Italien", "Russe"]         // Dimanche
 };
 
-// Liens gratuits pratiques par langue (envoyés avec la leçon)
 export const LINKS = {
   "Arabe": [
     { t: "Forvo (prononciation)", u: "https://forvo.com/languages/ar/" },
