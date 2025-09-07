@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: lang-quiz-bot
+    env: node
+    plan: free
+    buildCommand: "npm install"
+    startCommand: "npm start"
+    envVars:
+      - key: TZ
+        value: Europe/Paris
+      - key: BOT_TOKEN
+        sync: false  # ↳ mets ton token Telegram ici via le dashboard Render
+      - key: BASE_URL
+        value: https://YOUR-SERVICE.onrender.com
+    disk:
+      name: data
+      mountPath: /opt/render/project/src/data
+      sizeGB: 1
+    healthCheckPath: /health
