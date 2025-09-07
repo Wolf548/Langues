@@ -1,5 +1,5 @@
 {
-  "name": "render-lang-bot",
+  "name": "whatsapp-lang-bot-render",
   "version": "1.0.0",
   "type": "module",
   "main": "index.js",
@@ -7,9 +7,12 @@
     "start": "node index.js"
   },
   "dependencies": {
+    "@whiskeysockets/baileys": "^6.7.8",
     "dayjs": "^1.11.13",
     "express": "^4.19.2",
     "node-cron": "^3.0.3",
-    "telegraf": "^4.16.3"
+    "pino": "^9.0.0",
+    "qrcode": "^1.5.3",
+    "qrcode-terminal": "^0.12.0"
   }
 }
