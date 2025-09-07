@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: lang-quiz-bot
+    name: whatsapp-lang-bot
     env: node
     plan: free
     buildCommand: "npm install"
@@ -8,8 +8,6 @@ services:
     envVars:
       - key: TZ
         value: Europe/Paris
-      - key: BOT_TOKEN
-        sync: false  # ↳ mets ton token Telegram ici via le dashboard Render
       - key: BASE_URL
         value: https://YOUR-SERVICE.onrender.com
     disk:
