@@ -1,9 +1,12 @@
 import express from "express";
 import cron from "node-cron";
 import { Telegraf, Markup } from "telegraf";
-import dayjsBase from "dayjs";
-import timezone from "dayjs-plugin-timezone";
-import utc from "dayjs-plugin-utc";
+import dayjs from "dayjs";
+import utc from "dayjs/plugin/utc.js";
+import timezone from "dayjs/plugin/timezone.js";
+
+dayjs.extend(utc);
+dayjs.extend(timezone);
 import { ROTATION, LINKS } from "./lessons.js";
 import { QCM } from "./qcmBank.js";
 import { generateQuizHTML } from "./quizTemplate.js";
